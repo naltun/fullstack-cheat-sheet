@@ -48,6 +48,39 @@ FAV_FOOD = 'Pizza'
 FAV_FOOD = 'Hotdogs' # => warning: already initialized consant FAV_FOOD
 ```
 
+##### Operators
+An operator in Ruby is a symbol that takes two or more values and performs some _operations_ on them. Some operators are:
+* \+
+* \-
+* \*
+* \/
+
+Let's use these in an example:
+```ruby
+puts 1 + 2 # => 3
+puts 5 - 3 # => 2
+puts 2 * 6 # => 12
+puts 10 / 2 # => 5
+```
+
+We can also use operators on strings:
+```ruby
+name = 'Noah'
+puts name * 5 # => "NoahNoahNoahNoahNoah"
+```
+
+Ruby also has comparison operators for performing conditionals:
+* \==
+* \!=
+* \>
+* \<
+* \>=
+* \<=
+* \<=>
+* \===
+
+For more information on conditionals, please refer to the Ruby conditional's section!
+
 ##### Methods
 A method is a named reference for reusable code. This can either be predefined with Ruby, or user-defined.
 
