@@ -23,6 +23,8 @@ Likewise, support [Free Culture](https://creativecommons.org/share-your-work/pub
 ### Ruby
 #### What we'll learn
 * Variables
+* Operators
+* Conditionals
 * Methods
 
 ##### Variables
@@ -39,7 +41,7 @@ Variables can be reassigned values:
 ```ruby
 job = 'Scientist'
 job = 'Museum Curator'
-puts job # => Museum Curator
+puts job # => "Museum Curator"
 ```
 
 Constants are like variables, except the values cannot be changed:
@@ -81,12 +83,36 @@ Ruby also has comparison operators for performing conditionals:
 
 For more information on conditionals, please refer to the Ruby conditional's section!
 
+##### Conditionals
+`IF...ELSIF...ELSE`, the 3 keywords for performing Ruby conditionals.
+
+Ruby conditionals let us execute code based on conditions in our code. 
+Let us consider this example:
+
+```ruby
+country = 'US'
+if country == 'UK'
+  puts 'Person is British!'
+elsif country == 'US'
+  puts 'Person is American!'
+else
+  puts 'Person is not from the UK or the US!'
+end
+# => "Person is American!"
+```
+
+Ruby allows us do to sweet one-liners. This is recommended for with some experience. Let's look at some examples:
+```ruby
+age = 22
+puts 'Person is not a teenager!' if age >= 20
+```
+
 ##### Methods
 A method is a named reference for reusable code. This can either be predefined with Ruby, or user-defined.
 
 In example:
 ```ruby
-puts 'Hello, World!' # => Hello, World!
+puts 'Hello, World!' # => "Hello, World!"
 ```
 
 We also have methods with dot notation:
@@ -100,8 +126,8 @@ def hello(name = 'World!')
   puts "Hello, #{name}!"
 end
 
-hello # => Hello, World!
-hello('Steve') # => Hello, Steve!
+hello # => "Hello, World!"
+hello('Steve') # => "Hello, Steve!"
 ```
 
 Let's take a look at a more complex example:
@@ -118,5 +144,5 @@ def hex_to_base64(hex)
   return base64_str_encoded
 end
 
-hex_to_base64('49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d') # => SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t
+hex_to_base64('49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d') # => "SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t"
 ```
