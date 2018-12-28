@@ -108,6 +108,99 @@ age = 22
 puts 'Person is not a teenager!' if age >= 20
 ```
 
+##### Loops
+Loops in Ruby allow the developer repeat action(s), as many times as you want. You can _loop_ through things like arrays and hashes.
+
+Let's take a look at the different loops through examples.
+
+###### Each loop:
+```ruby
+nums = [2, 4, 6]
+nums.each do |num|
+  puts num
+end
+# => 2, 4, 6
+```
+
+We can also do the loop on one line:
+```ruby
+names = ['Sarah', 'Sally', 'Sasha']
+names.each { |name| puts name } # => 'Sarah', 'Sally', 'Sasha'
+```
+
+Ruby also has other loops, namely:
+* Times loop
+* Range loop
+* While loop
+
+Let's look at basic examples for each.
+
+###### Times loop
+Each loops allow the developer to cycle through values in arrays and hashes.
+
+Let's look at a basic example:
+```ruby
+10.times do |num|
+  puts num + 1
+end
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# => 10
+```
+
+REMEMBER: using `#times` begins the loop counter at 0 (which is why we did `num + 1` above!).
+
+###### Range loop
+Range loops allow the developer to create a loop that cycles a number of times specified in the range. Consider this example:
+```ruby
+limit = 10
+(1..limit).each do |num|
+  puts num
+end
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# => 1..10
+```
+
+NOTE: using `#each` on a range begins the counter at 1. :)
+
+###### While loop
+While loops aren't as common in Ruby, but you'll encounter them. Here's an example:
+```ruby
+num = 0
+while num < 10
+  puts num
+  num += 1
+end
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# => nil
+```
+
 ##### Methods
 A method is a named reference for reusable code. This can either be predefined with Ruby, or user-defined.
 
