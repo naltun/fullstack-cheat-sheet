@@ -25,6 +25,7 @@ Likewise, support [Free Culture](https://creativecommons.org/share-your-work/pub
 * Variables
 * Operators
 * Conditionals
+* Loops
 * Methods
 
 ##### Variables
@@ -101,7 +102,7 @@ end
 # => "Person is American!"
 ```
 
-Ruby allows us do to sweet one-liners. This is recommended for with some experience. Let's look at some examples:
+Ruby allows us do to sweet one-liners. This is recommended for devs with some experience. Let's look at some examples:
 ```ruby
 age = 22
 puts 'Person is not a teenager!' if age >= 20
