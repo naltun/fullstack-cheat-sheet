@@ -108,6 +108,25 @@ age = 22
 puts 'Person is not a teenager!' if age >= 20
 ```
 
+Let's look at some examples of using conditional operators.
+
+```ruby
+fav_num = 4
+
+puts '4' if fav_num == 4
+puts 'Not 4' if fav_num != 4
+
+# Checking for one condition to be true
+if fav_num == 4 || fav_num == 7
+  puts 'My favorite number is either 4 or 7.'
+end
+
+# Checking for two conditions to be true
+if fav_num <= 10 && fav_num >= 1
+  puts 'My favorite number is between 1 and 10.'
+end
+```
+
 ##### Loops
 Loops in Ruby allow the developer repeat action(s), as many times as you want. You can _loop_ through things like arrays and hashes.
 
